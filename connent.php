@@ -23,11 +23,12 @@ $redis = new Redis();
  * host
  * port
  * timeout 设置超时时间
- * retry_interval 尝试重新连接时间
+ * retry_interval 尝试重新连接间隔时间
  *
  */
 $redis->connect('127.0.0.1');
 
+//$redis->select(1);
 
 /**
  * select 选择数据库
